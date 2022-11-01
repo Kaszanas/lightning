@@ -49,7 +49,7 @@ You can also pass multiple mounts to a single work by passing a ``List[Mount(...
 .. note::
 
     * Mounts are limited to 1M files.
-    * Mount objects should not be larger than 5 GiB.
+    * A file within the Mount should not exceed 5 GiB.
     * When adding multiple mounts, each one should have a unique ``mount_path``.
     * A maximum of 10 :class:`~lightning_app.storage.mount.Mount`\s can be added to a :class:`~lightning_app.core.work.LightningWork`.
 
