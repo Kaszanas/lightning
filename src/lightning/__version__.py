@@ -15,4 +15,4 @@ else:
 
         version = subprocess.check_output(["git", "rev-parse", "--short", "HEAD"]).decode("ascii").strip()
     except Exception:
-        version = ""
+        version = "unknown"
